@@ -33,5 +33,7 @@ public class ProducerProperties extends Properties {
 
         put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getCanonicalName());
         put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getCanonicalName());
+        put(ProducerConfig.CLIENT_ID_CONFIG, "Client1");
+        put(ProducerConfig.ACKS_CONFIG, "all");
     }
 }
